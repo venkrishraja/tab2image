@@ -6,7 +6,7 @@ class NoImagesMessage extends React.Component {
       <div>
         <div className="align-center padding">
           <img src="img/icon48.png" alt="icon" />
-          <h1>Save Tabbed Images</h1>
+          <h1>tab2image</h1>
           <p>No images opened in current window.</p>
           <p>Right click an image and select "Open Image in New Tab" to get started.</p>
         </div>

@@ -1,5 +1,5 @@
 {
-  "name": "Save Tabbed Images",
+  "name": "tab2image",
   "description": "Save images currently opened in tabs.",
   "version": "0.7.0",
   "manifest_version": 3,

@@ -1,7 +1,7 @@
 {
   "name": "tab2image",
   "private": true,
-  "description": "Save Tabbed Images Chrome Extension",
+  "description": "tab2image Chrome Extension",
   "scripts": {
     "build": "webpack -p",
     "clean": "rm -f ./dist/js/* package.zip",

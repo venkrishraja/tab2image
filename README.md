@@ -1,10 +1,10 @@
-![save tabbed images icon](/dist/img/icon128.png)
+![tab2image icon](/dist/img/icon128.png)
 
-# Save Tabbed Images
+# tab2image
 
-A simple and easy-to-use chrome extension to download all images opened as tabs in one click.
+tab2image is a simple and easy-to-use Chrome extension to download every image opened as a tab in one click.
 
-[**Get the extension at the Chrome web store**](https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh).
+[**Get tab2image on the Chrome Web Store**](https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh).
 
 <img src="/assets/screenshots/demo.gif" alt="demo gif" width="500px" />
 
@@ -40,4 +40,4 @@ yarn run lint
 
 ### License
 
-Save Tabbed Images is [MIT licensed](https://opensource.org/licenses/MIT).
+tab2image is [MIT licensed](https://opensource.org/licenses/MIT).
