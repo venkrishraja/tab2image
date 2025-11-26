@@ -1,3 +1,7 @@
+## Unreleased
+
+* Update Chrome extension manifest to version 3 and align permissions with current requirements
+
 ## 0.7.0
 
 * Add tabbed webm downloads #45

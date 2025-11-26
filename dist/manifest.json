@@ -2,17 +2,17 @@
   "name": "Save Tabbed Images",
   "description": "Save images currently opened in tabs.",
   "version": "0.7.0",
-  "minimum_chrome_version": "16.0.884",
-  "manifest_version": 2,
+  "manifest_version": 3,
+  "minimum_chrome_version": "88",
   "permissions": [
     "downloads",
     "tabs",
-    "<all_urls>",
-    "webRequest",
-    "activeTab",
-    "*://*/*"
+    "webRequest"
   ],
-  "browser_action": {
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
     "default_popup": "index.html",
     "default_icon": "img/icon16.png"
   },
@@ -22,8 +22,7 @@
     "128": "img/icon128.png"
   },
   "background": {
-    "scripts": ["js/background.js"],
-    "persistent": true
+    "service_worker": "js/background.js"
   },
   "incognito": "split"
 }
