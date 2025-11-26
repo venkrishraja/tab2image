@@ -1,5 +1,5 @@
 {
-  "name": "save_tabbed_images",
+  "name": "tab2image",
   "private": true,
   "description": "Save Tabbed Images Chrome Extension",
   "scripts": {

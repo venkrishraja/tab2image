@@ -34,8 +34,8 @@ yarn run lint
 * Summarize the changes made from the last release (list pull requests) in CHANGELOG.md
 * Create git tag with `git tag x.x.x` and push it with `git push origin --tags`
 * Build a production version of webpack bundle with `yarn run package`
-* Create a .zip file of the `dist` folder named `save_tabbed_images_<version>.zip`
-* [Create a new release in github](https://github.com/iqnivek/save_tabbed_images/releases) and attach the .zip file. In the description, add the summary from CHANGELOG.md.
+* Create a .zip file of the `dist` folder named `tab2image_<version>.zip`
+* [Create a new release in github](https://github.com/iqnivek/tab2image/releases) and attach the .zip file. In the description, add the summary from CHANGELOG.md.
 * Upload the .zip file to the chrome web store
 
 ### License
