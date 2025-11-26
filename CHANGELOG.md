@@ -8,7 +8,7 @@
 
 ## 0.6.0
 
-* Use split incognito mode so downloads in incognito mode aren't logged after window closes [[#35]](https://github.com/iqnivek/tab2image/pull/35)
+* Use split incognito mode so downloads in incognito mode aren't logged after window closes [[#35]](https://github.com/iqnivek/save_tabbed_images/pull/35)
 
 ## 0.5.0
 
