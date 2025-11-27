@@ -2,6 +2,10 @@
 
 * Update Chrome extension manifest to version 3 and align permissions with current requirements
 
+## 0.8.2
+
+* Replace extension icons with new colorful logo assets
+
 ## 0.8.1
 
 * Fix React bundling to use the production build and eliminate dev warnings
