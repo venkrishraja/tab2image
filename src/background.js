@@ -23,6 +23,17 @@ const imageExtensions = {
   'webm': true
 };
 
+const urlExtensionRegex = /.+\.([^?]+)(\?|$)/;
+
+function matchesImageExtension(url) {
+  const urlFileExtension = url.match(urlExtensionRegex);
+  if (!urlFileExtension) {
+    return false;
+  }
+  const ext = urlFileExtension[1].toLowerCase();
+  return Boolean(imageExtensions[ext]);
+}
+
 // Track which tabs are images based on MIME type
 chrome.webRequest.onHeadersReceived.addListener(
   (details) => {
@@ -49,18 +60,11 @@ chrome.runtime.onMessage.addListener(
       for (let i = 0; i < tabs.length; i++) {
         const tab = tabs[i];
         const tabObj = { id: tab.id, url: tab.url };
-        const urlFileExtension = tab.url.match(/.+\.([^?]+)(\?|$)/);  // regex captures extension
-        if (tabsWithImages[tab.id] === true) {
+        const headerStatus = tabsWithImages[tab.id];
+        const isImageByExtension = matchesImageExtension(tab.url);
+
+        if (headerStatus === true || (isImageByExtension && headerStatus !== true)) {
           tabsToReturn.push(tabObj);
-        } else if (tabsWithImages[tab.id] === false) {
-          // Tab is not an image, do nothing.
-        } else if (urlFileExtension) {
-          // If we didn't get it from MIME checking (i.e. if extension had been disabled or just installed), check the file extension as a fallback.
-          // Can create false positives, but better than overlooking files.
-          const ext = urlFileExtension[1].toLowerCase();
-          if (imageExtensions[ext]) {
-            tabsToReturn.push(tabObj);
-          }
         }
       }
       sendResponse({ tabs: tabsToReturn });
