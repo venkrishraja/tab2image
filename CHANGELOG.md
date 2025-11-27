@@ -2,6 +2,10 @@
 
 * Update Chrome extension manifest to version 3 and align permissions with current requirements
 
+## 0.8.3
+
+* Improve image detection fallback so querystring-heavy URLs are recognized
+
 ## 0.8.2
 
 * Replace extension icons with new colorful logo assets
