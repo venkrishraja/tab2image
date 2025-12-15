@@ -1,7 +1,7 @@
 {
   "name": "tab2image",
   "description": "Save images currently opened in tabs.",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "manifest_version": 3,
   "minimum_chrome_version": "88",
   "permissions": [
